@@ -5,7 +5,6 @@ require_once "Attendance.php";
 $student = new Student();
 $attendance = new Attendance();
 
-// ==== Student actions ====
 if (isset($_POST['add_student'])) {
     $student->add($_POST['name']);
 }
@@ -19,7 +18,6 @@ if (isset($_GET['edit_student'])) {
     $editStudent = $student->getById($_GET['edit_student']);
 }
 
-// ==== Attendance actions ====
 if (isset($_POST['mark_attendance'])) {
     foreach ($_POST['attendance'] as $student_id => $status) {
         $attendance->mark($student_id, $status);
@@ -188,3 +186,4 @@ $records = $attendance->all();
 
 </body>
 </html>
+
