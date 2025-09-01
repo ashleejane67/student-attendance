@@ -41,7 +41,7 @@ $records = $attendance->all();
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Highschool Attendance Manager</title>
+    <title>IT313 Student Attendance</title>
     <style>
         body {
             font-family: "Segoe UI", Arial, sans-serif;
@@ -125,7 +125,7 @@ $records = $attendance->all();
     </style>
 </head>
 <body>
-<h1>📘 Highschool Attendance Manager</h1>
+<h1>📘 IT313 Student Attendance </h1>
 
 <h2>Students</h2>
 <form method="POST">
@@ -154,7 +154,7 @@ $records = $attendance->all();
 <?php endforeach; ?>
 </table>
 
-<h2>Mark Attendance</h2>
+<h2>Students List</h2>
 <form method="POST">
     <?php foreach($students as $s): ?>
         <div class="attendance-row">
